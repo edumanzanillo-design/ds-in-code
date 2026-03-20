@@ -8,8 +8,10 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react"
+import { useNavigate } from "react-router-dom"
 
 function App() {
+  const navigate = useNavigate()
   return (
     /*
       Box es el componente más básico de Chakra, equivale a un <div>.
@@ -54,6 +56,9 @@ function App() {
           <Link href="#" color="#222222">About me</Link>
           <Link href="#" color="#222222">Works</Link>
           <Link href="#" color="#222222">Contact</Link>
+          <Button colorPalette="teal" variant="solid" size="sm" onClick={() => navigate("/components")}>
+            UI Components
+          </Button>
         </HStack>
       </Flex>
 
@@ -84,7 +89,7 @@ function App() {
           <Button size="lg" bg="#0371B7" color="white">
             Contact me
           </Button>
-          <Button size="lg" variant="outline">
+          <Button size="lg" variant="outline" color="#222222">
             Know more about me
           </Button>
         </HStack>
