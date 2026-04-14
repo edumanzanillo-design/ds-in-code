@@ -59,6 +59,17 @@ function App() {
           <Button colorPalette="teal" variant="solid" size="sm" onClick={() => navigate("/components")}>
             UI Components
           </Button>
+          <Button
+            as="a"
+            href="http://localhost:8080"
+            target="_blank"
+            colorPalette="blue"
+            variant="solid"
+            size="sm"
+            bg="#0371B7"
+          >
+            🎓 My Moodle
+          </Button>
         </HStack>
       </Flex>
 
